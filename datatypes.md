@@ -14,6 +14,8 @@ Se fizermos `(type 1)` teremos o resultado `java.lang.Long`
 `(type false)` teremos o resultado `java.lang.Boolean`
 `(type nil)` teremos o resultado `nil`
 
+Existem os seguintes tipos booleanos em Clojure: `nil, true, false, Truthiness, Equality`.
+
 ### String
 
 `(type "Hello")` teremos o resultado `java.lang.String`
