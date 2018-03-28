@@ -39,6 +39,16 @@ Outro exemplo, utilizando `do`:
         :ok))   ;; retorna "OK"
 ```
 
+## When
+
+When é uma combinação de if e do em um só comando:
+
+(when true
+  (println "Success!")
+  "abra cadabra")
+; => Success!
+; => "abra cadabra"
+
 ## not
 
 ```clojure
@@ -75,3 +85,46 @@ Utilizamos a seguinte sintaxe:
 ```
 
 `:nothing`, aqui, é o valor default
+
+## Operadores
+
+Operador de igualdade `=`:
+
+```clojure
+(= 1 1) ;; retorna true
+```
+
+Operador `or`:
+
+```clojure
+(or false nil :large_I_mean_venti :why_cant_I_just_say_large) ;; retorna :large_I_mean_venti
+```
+
+Nesse caso :large_I_mean_venti é o primeiro valor verdadeiro, então já é retornado
+
+```clojure
+(or (= 0 1) (= "yes" "no")) ;; retorna false
+```
+
+Neste exemplo não temos nenhum valor verdadeiro, por isso é retornado a última avaliação
+que é `false` por causa da comparação `(= "yes" "no")`
+
+```clojure
+(or nil) ;; retorna nil
+```
+
+Neste caso acontece o mesmo, retornando o último valor (e único)
+
+Operador `and`:
+
+```clojure
+(and :free_wifi :hot_coffee) ;; retorna :hot_coffee
+```
+
+Como todos os valores são verdadeiros, o and retorna o último verdadeiro
+
+```clojure
+(and :feelin_super_cool nil false) ;; retorna nil
+```
+
+Como existe um `falsey` no meio, então ele é retornado (nesse caso o nil)
