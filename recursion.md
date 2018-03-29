@@ -5,10 +5,10 @@ Vamos imaginar uma função que soma todos os valores de dentro de uma estrutura
 Em Python poderíamos fazer:
 
 ```python
-def my_func (vals):
+def my_func (numbers):
     total = 0
-    for val in vals:
-        total += val
+    for number in numbers:
+        total += number
     return total
 ```
 
