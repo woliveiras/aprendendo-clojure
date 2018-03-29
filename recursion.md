@@ -2,7 +2,7 @@
 
 Vamos imaginar uma função que soma todos os valores de dentro de uma estrutura de dados.
 
-Em Python poderíamos fazer:
+Em Python poderíamos trabalhar com recursividade, porém seria comum fazermos algo do tipo:
 
 ```python
 def my_func (numbers):
