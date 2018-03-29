@@ -19,10 +19,10 @@ Em Clojure devemos utilizar recursividade para tal.
 Fazemos:
 
 ```clojure
-(defn my-recursive-sum [total vals]
-    (if (empty? vals)
+(defn my-recursive-sum [total numbers]
+    (if (empty? numbers)
         total
-        (my-recursive-sum (+ (first vals) total) (rest vals))))
+        (my-recursive-sum (+ (first numbers) total) (rest numbers))))
 
 (my-recursive-sum 0 [0 1 2 3 4])
 ```
@@ -30,10 +30,10 @@ Fazemos:
 O que acontece aqui é:
 
 - recebemos o valor inicial do contador `0` e a estrutura a qual iremos trabalhar em cima
-- colocamos o finalizador para a recursão logo no começo, `(if (empty? vals)`, se vals estiver vazio, finaliza retornando `total`
+- colocamos o finalizador para a recursão logo no começo, `(if (empty? numbers)`, se numbers estiver vazio, finaliza retornando `total`
 - agora utilizamos recursividade e chamamos novamente `my-recursive-sum` com os parâmetros
-    - ` (+ (first vals) total)` somamos o primeiro valor de vals ao acumulador e retornamos esse valor
-    - retornamos o restante dos valores dentro da estrutura `(rest vals)`
+    - ` (+ (first numbers) total)` somamos o primeiro valor de numbers ao acumulador e retornamos esse valor
+    - retornamos o restante dos valores dentro da estrutura `(rest numbers)`
 
 Então, o que acontece é:
 
@@ -46,7 +46,7 @@ Então, o que acontece é:
 6. (my-recursive-sum 10 [])
 ```
 
-E quando recebemos `(my-recursive-sum 10 [])` caímos na condicional de que `se vals for vazio, retorne o total`.
+E quando recebemos `(my-recursive-sum 10 [])` caímos na condicional de que `se numbers for vazio, retorne o total`.
 
 Isso funciona porque first retorna o primeiro valor e rest retorna os demais.
 
@@ -62,10 +62,10 @@ rest de [1 2 3 4], retorna [2 3 4]
 Imagine a seguinte função:
 
 ```clojure
-(defn first-rest-sample [vals]
-    (if (empty? vals)
+(defn first-rest-sample [numbers]
+    (if (empty? numbers)
         "Is empty!"
-        (str "First: " (first vals) " and rest: " (rest vals))))
+        (str "First: " (first numbers) " and rest: " (rest numbers))))
 ```
 
 Agora, ao usarmos ela, vejamos o que acontece:
@@ -74,17 +74,17 @@ Agora, ao usarmos ela, vejamos o que acontece:
 (first-rest-sample [0 1 2 3 4]) ;; retorna "First: 0 and rest: (1 2 3 4)"
 ```
 
-Mas nada mudou em nosso vetor `vals` inicial, ele continua sendo `[0 1 2 3 4]` e isso acontece porque (além de que em Clojure é tudo imutável) [0 1 2 3 4], [1 2 3 4], [2 3 4], [3 4] e [4] são os valores que estamos passando como parâmetro para a função `my-recursive-sum` quando ela é executada novamente.
+Mas nada mudou em nosso vetor `numbers` inicial, ele continua sendo `[0 1 2 3 4]` e isso acontece porque (além de que em Clojure é tudo imutável) [0 1 2 3 4], [1 2 3 4], [2 3 4], [3 4] e [4] são os valores que estamos passando como parâmetro para a função `my-recursive-sum` quando ela é executada novamente.
 
 Mas daria para criar a função `my-recursive-sum` sem que o usuário da função tivesse que passar a posição inicial do acumulador toda vez.
 
 ```clojure
 (defn my-recursive-sum
-    ([vals] (my-recursive-sum 0 vals))
-    ([total vals]
-        (if (empty? vals)
+    ([numbers] (my-recursive-sum 0 numbers))
+    ([total numbers]
+        (if (empty? numbers)
             total
-            (my-recursive-sum (+ (first vals) total) (rest vals)))))
+            (my-recursive-sum (+ (first numbers) total) (rest numbers)))))
 ```
 
 Agora o usuário pode passar:
@@ -101,21 +101,21 @@ Ou:
 
 Aqui o que acontece é que transformamos `my-recursive-sum` em uma **multi-arity function**, uma função que pode trabalhar de modo diferente dependendo da quantidade de parâmetros recebidos.
 
-Se ela receber somente um valor ([vals]), então ela executa a própria função, recursivamente, com dois parâmetros (0 e vals) e então cai na segunda branch, que é quando temos todo o processo de soma.
+Se ela receber somente um valor ([numbers]), então ela executa a própria função, recursivamente, com dois parâmetros (0 e numbers) e então cai na segunda branch, que é quando temos todo o processo de soma.
 
 ```
-([vals] (my-recursive-sum 0 vals))
+([numbers] (my-recursive-sum 0 numbers))
 ```
 
 Uma melhoria em nossa função seria utilizar o recurso da própria linguagem chamado `recur`.
 
 ```clojure
 (defn my-recursive-sum
-    ([vals] (my-recursive-sum 0 vals))
-    ([total vals]
-        (if (empty? vals)
+    ([numbers] (my-recursive-sum 0 numbers))
+    ([total numbers]
+        (if (empty? numbers)
             total
-            (recur (+ (first vals) total) (rest vals)))))
+            (recur (+ (first numbers) total) (rest numbers)))))
 ```
 
 Utilizamos `recur` porque é um recurso otimizado da linguagem. O `recur`, ao invés de adicionar mais uma chamada de função a pilha, ele reutiliza a mesma posição da pilha evitando stack overflow.
