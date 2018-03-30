@@ -15,8 +15,6 @@
 
 - [Preparando o ambiente para aprender Clojure](chapters/Preparando-o-ambiente-para-aprender-Clojure.md)
 - [Instalando um editor de textos para trabalhar com Clojure](chapters/Instalando-um-editor-de-textos-para-trabalhar-com-Clojure.md)
-- [Instalando um REPL](chapters/Instalando-um-REPL.md)
-    - [Interagindo com o REPL](chapters/Instalando-um-REPL.md#interagindo-com-o-REPL)
 
 ## Aprendendo Clojure
 
