@@ -9,7 +9,7 @@ Eu indico a instalação direta com um build tool para que seja fácil a instala
 
 Existem dois build tools famosos, o Leiningen e o Boot.
 
-Como neste livro estou utilizando o Leiningen para aprender Clojure, seria legal seguir o site para a instalação do mesmo em seu sistema operacional.
+Como eu estou utilizando o Leiningen para aprender Clojure, seria legal seguir o site para a instalação do mesmo em seu sistema operacional para não acontecer algum erro inesperado enquanto lê o livro.
 
 - [site oficial do Leiningen](https://leiningen.org/#install)
 
