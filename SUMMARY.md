@@ -25,6 +25,10 @@
 - [Entendendo recursividade](chapters/1ntendendo-recursividade.md)
 - [Funções utilitárias](chapters/11-funcoes-utilitarias.md)
 
+## Projetos Clojure
+
+- [Interagindo com o Leiningen](chapters/interagindo-com-o-leiningen.md)
+
 ## Interagindo com Java
 
 ## Concorrência
