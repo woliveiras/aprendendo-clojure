@@ -3,11 +3,11 @@
 ## Introdução
 
 - [Introdução](README.md)
-    - [A quem se destina este livro](README.md#A-quem-se-destina-este-livro)
-    - [O que eu preciso saber antes de ler este livro](README.md#O-que-precisamos-saber-antes-de-ler-este-livro)
-    - [O que vamos ver neste livro](README.md#O-que-vamos-ver-neste-livro)
-    - [Como ler este livro](README.md#Como-ler-este-livro)
-    - [Como contribuir](README.md#Como-contribuir)
+    - [A quem se destina este livro](README.md#a-quem-se-destina-este-livro)
+    - [O que eu preciso saber antes de ler este livro](README.md#o-que-precisamos-saber-antes-de-ler-este-livro)
+    - [O que vamos ver neste livro](README.md#o-que-vamos-ver-neste-livro)
+    - [Como ler este livro](README.md#como-ler-este-livro)
+    - [Como contribuir](README.md#como-contribuir)
 - [O que é Clojure](chapters/01-o-que-e-clojure.md)
 - [Por que aprender Clojure](chapters/02-por-que-aprender-clojure.md)
 
@@ -16,7 +16,7 @@
 - [Preparando o ambiente para aprender Clojure](chapters/03-Preparando-o-ambiente-para-aprender-Clojure.md)
 - [Instalando um editor de textos para trabalhar com Clojure](chapters/04-Instalando-um-editor-de-textos-para-trabalhar-com-Clojure.md)
 - [Instalando um REPL](chapters/05-Instalando-um-REPL.md)
-    - [Interagindo com o REPL](chapters/05-Instalando-um-REPL.md#Interagindo-com-o-REPL)
+    - [Interagindo com o REPL](chapters/05-Instalando-um-REPL.md#interagindo-com-o-REPL)
 
 ## Aprendendo Clojure
 
