@@ -12,7 +12,7 @@ Clojure é uma linguagem rápida e eficiênte.
 
 Clojure é uma das linguagens com o salário mais alto no mundo segundo o relatório do stackoverflow.
 
-![Survey stackoverflow](images/survey-salary.png)
+![Survey stackoverflow](https://i.imgur.com/kuPFtYb.png)
 
 ## Referências
 
