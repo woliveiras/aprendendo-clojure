@@ -29,6 +29,7 @@
 
 - [Interagindo com o Leiningen](chapters/interagindo-com-o-leiningen.md)
 - [Importando e utilizando dependências](chapters/importando-e-utilizando-dependências.md)
+- [Entendendo namespaces](chapters/entendendo-namespaces.md)
 
 ## Interagindo com Java
 

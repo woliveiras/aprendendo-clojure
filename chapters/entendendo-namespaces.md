@@ -1,0 +1,1 @@
+# Entendendo namespaces
