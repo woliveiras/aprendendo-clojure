@@ -1,0 +1,8 @@
+{
+    "structure": {
+        "readme": "README.md"
+    },
+    "title" : "Aprendendo Clojure",
+    "description": "Um livro sobre Clojure, uma linguagem funcional, concorrente e que roda na JVM",
+    "language": "pt"
+}
