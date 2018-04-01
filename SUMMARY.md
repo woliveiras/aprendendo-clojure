@@ -22,7 +22,6 @@
 - [Controle de fluxo](chapters/controle-de-fluxo.md)
 - [Funções](chapters/funcoes.md)
 - [Trabalhando com coleções e sequências](chapters/Trabalhando-com-colecoes-e-sequencias.md)
-- [Entendendo recursividade](chapters/1ntendendo-recursividade.md)
 - [Funções utilitárias](chapters/11-funcoes-utilitarias.md)
 
 ## Projetos Clojure
