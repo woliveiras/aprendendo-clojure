@@ -6,7 +6,9 @@ Este livro é resultado de minhas anotações e pesquisas enquanto estudo a ling
 
 Utilize a vontade para também aprender ou ensinar.
 
-Caso encontre algo errado, algum exemplo não muito explicativo ou problemas de ortografia, pode abrir uma issue no repositório.
+Caso encontre algo errado, algum exemplo não muito explicativo ou problemas de ortografia, pode abrir uma [issue](https://github.com/woliveiras/aprendendo-clojure/issues/new) no [repositório](https://github.com/woliveiras/aprendendo-clojure).
+
+Não se esqueça de dar uma [estrelinha no repositório](https://github.com/woliveiras/aprendendo-clojure) como agradecimento pelo meu trabalho, claro. ;\)
 
 ## A quem se destina este livro
 
@@ -26,15 +28,15 @@ Todos os conceitos serão abordados e tratados em seu devido momento.
 
 Iremos aprender:
 
-- O que é Clojure
-- Por que aprender a linguagem
-- Vamos conhecer alguns editores de textos
-- Interagir com o REPL
-- Conceitos principais da linguagem
-- Interação com Java
-- Concorrência
-- Interagir com bancos de dados
-- Como criar uma aplicação web
+* O que é Clojure
+* Por que aprender a linguagem
+* Vamos conhecer alguns editores de textos
+* Interagir com o REPL
+* Conceitos principais da linguagem
+* Interação com Java
+* Concorrência
+* Interagir com bancos de dados
+* Como criar uma aplicação web
 
 Se você não sabe o que significa REPL, não se preocupe, entenderemos isso nos próximos capítulos.
 
@@ -46,5 +48,14 @@ Sempre que aprendermos algo legal, podemos ir testando de outros modos para apre
 
 ## Como contribuir
 
-Para contribuir com este projeto, acesse o [CONTRIBUTE.md](CONTRIBUTE.md)
+Para contribuir com a criação desse livro você pode:
+
+
+
+* [abrir uma issue](https://github.com/woliveiras/aprendendo-clojure/issues/new) solicitando tópicos
+* encontrar erros e reportar em uma [issue](https://github.com/woliveiras/aprendendo-clojure/issues/new) \(ou mais se forem vários erros\)
+* compartilhar este GitBook nas redes sociais
+* dar uma estrelinha no [repositório](https://github.com/woliveiras/aprendendo-clojure)
+
+
 
