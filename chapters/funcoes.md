@@ -195,7 +195,7 @@ Poderíamos, então, utilizar o `filter` no lugar de criarmos uma função para 
 
 ## Utilizando map
 
-O `filter`, recebe 2 argumentos: 
+O `map`, recebe 2 argumentos: 
 
 1. uma função
 2. uma lista de valores
@@ -204,7 +204,7 @@ Imagina que precisamos incrementar cada valor de um array.
 
 Em uma abordagem estrutural poderíamos criar um loop e ir acrescentando a cada iteração.
 
-Poderíamos, também, criar uma funçã para incrementarmos utilizando a função `inc` de Clojure:
+Poderíamos, também, criar uma função para incrementarmos utilizando a função `inc` de Clojure:
 
 ```clojure
 (defn my-inc [acc next-val]
